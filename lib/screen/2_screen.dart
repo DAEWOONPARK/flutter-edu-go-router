@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:go_router_sample/layout/default_layout.dart';
 
-class OneScreen extends StatelessWidget {
-  const OneScreen({Key? key}) : super(key: key);
+class TwoScreen extends StatelessWidget {
+  const TwoScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return DefaultLayout(
       body: Column(
         children: [
-          Text('One Screen')
+          Text(
+            'Two Screen',
+          ),
         ],
       ),
     );

@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:go_router_sample/layout/default_layout.dart';
 
-class OneScreen extends StatelessWidget {
-  const OneScreen({Key? key}) : super(key: key);
+class ThreeScreen extends StatelessWidget {
+  static String get routeName => 'three';
+
+  const ThreeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return DefaultLayout(
       body: Column(
         children: [
-          Text('One Screen')
+          Text(
+            'Three Screen',
+          ),
         ],
       ),
     );
