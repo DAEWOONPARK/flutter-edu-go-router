@@ -23,7 +23,13 @@ class HomeScreen extends StatelessWidget {
               context.goNamed(ThreeScreen.routeName);
             },
             child: Text('Screen Three(GO)'),
-          )
+          ),
+          ElevatedButton(
+            onPressed: () {
+              context.go('/error');
+            },
+            child: Text('Error Screen(GO)'),
+          ),
         ],
       ),
     );
